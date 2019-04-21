@@ -1,0 +1,50 @@
+#taskOutputDiv {
+    margin-top: 3rem;
+}
+
+#taskInputDiv {
+    margin-top: 3rem;
+    background-color: white;
+}
+
+/* https://stackoverflow.com/questions/25549661/check-box-size-change-with-css/25549932 */
+input[type=checkbox] {
+ -ms-transform: scale(2); /* IE */
+ -moz-transform: scale(2); /* FF */
+ -webkit-transform: scale(2); /* Safari and Chrome */
+ -o-transform: scale(2); /* Opera */
+  padding: 10px;
+}
+
+/* https://stackoverflow.com/questions/22000754/responsive-bootstrap-jumbotron-background-image */
+.jumbotron {
+    background-image: url("https://c1.staticflickr.com/2/1554/24560189245_a748ff6191_b.jpg");
+    background-size: cover;
+    height: 80%;
+    background-position: 50% 50%;
+    
+}
+
+.header-text {
+    text-align: right;
+    color: white;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+.card-header {
+    background-color: black;
+    color: white;
+}
+
+.btn-primary {
+    background-color: #FEE777;
+    color: black;
+    border-color: #FEE777;
+}
+/* 
+input {
+    border-color: #FEE777;
+} */

@@ -1,0 +1,61 @@
+SERVER SETUP
+
+x Connect to localhost
+x Install express, body-parser, pg
+x Connect to pool
+x Create database with "task_description", "complete"
+
+
+CLIENT SETUP
+
+x Create HTML content
+x Source to jQuery and client.js
+x Link to css and bootstrap
+
+
+CHALLENGE COMPONENTS
+
+- Allow a user to create a Task
+- When the Task is created, it should be stored inside of a database (SQL)
+- Whenever a Task is created the front end should refresh to show all tasks that need to be completed.
+- Each Task should have an option to 'Complete' or 'Delete'.
+- When a Task is complete, its visual representation should change on the front end. 
+    For example, the background of the task container could change from gray to green. 
+    The complete option should be  'checked off'. 
+- Whether or not a Task is complete should also be stored in the database.
+- Deleting a Task should remove it both from the front end as well as the Database.
+
+
+FUNCTIONS 
+
+- handleAddTask()
+    x Get input field values
+    x Save to server --> saveTask()
+    x Fetch tasks --> fetchTask()
+    x Display tasks --> displayTask()
+- saveTask()
+    x Send POST request to route /task 
+- fetchTask()
+    x Send GET request from /task
+- displayTask()
+    x fetchTask()
+    x empty output div
+    x Append data on DOM
+- handleCompleteTask()
+    Target checkbox
+    If checked, status = false
+    If unchecked, status = true
+    Save updated status on database --> updateTask()
+    then change style according to status
+- updateTask()
+    Send UPDATE request to /task
+    
+- handleDeleteTask()
+    x Target selected task
+    x Remove task from database
+    x Get updated tasks and display on DOM
+
+    
+`feature-confirm-delete`
+
+    - [ ]  In whatever fashion you would like, create an 'are you sure: yes / no' option when deleting a task.
